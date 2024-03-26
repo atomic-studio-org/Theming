@@ -24,28 +24,9 @@
         inherit (utility-flake.checks.${pkgs.system}) pre-commit-check;
       });
 
-      packages = forEachSupportedSystem ({ pkgs }: rec {
-        default = sample;
-        sample = pkgs.stdenvNoCC.mkDerivation rec {
-          pname = "sample";
-          name = "sample";
-          src = pkgs.lib.cleanSource ./.;
-
-          buildInputs = with pkgs; [ podman distrobox ];
-
-          buildCommand = ''
-            	    mkdir -p $out/bin $out/libexec
-            	    cp $src/src/${pname} $out/bin
-            	    substituteInPlace $out/bin/${pname} --replace './libexec' "$out/libexec"
-            	    cp -r $src/src/libexec/* $out/libexec
-            	  '';
-        };
-        inherit (utility-flake.packages.${pkgs.system}) cosign-generate;
-      });
-
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
-          packages = utility-flake.lib.${pkgs.system}.devShellPackages ++ (with pkgs; [ earthly go-task melange apko ]);
+          packages = utility-flake.lib.${pkgs.system}.devShellPackages ++ (with pkgs; [ go-task melange apko ]);
         };
       });
     };

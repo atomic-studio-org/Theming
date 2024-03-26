@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: build-rpmspec-xe
+      - task: build-rpmspec-xyny
+  build-rpmspec-xe:
+    cmds:
+      - podman build --build-arg="SELECTED_SPEC=src/rpmspec/{{.SPEC}}.spec.rpkg" -f Containerfile .
+    vars:
+      SPEC: wallpapers-xe
+  build-rpmspec-xyny:
+    cmds:
+      - podman build --build-arg="SELECTED_SPEC=src/rpmspec/{{.SPEC}}.spec.rpkg" -f Containerfile .
+    vars:
+      SPEC: wallpapers-xyny
