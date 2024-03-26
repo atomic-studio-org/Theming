@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>As</name>
+    <filename>/usr/share/backgrounds/atomic-studio-org/xyny/as4-1.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#231620FF</pcolor>
+    <scolor>#5C3C55FF</scolor>
+  </wallpaper>
+</wallpapers>
