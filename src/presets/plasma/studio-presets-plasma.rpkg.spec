@@ -19,11 +19,15 @@ Presets and Branding for Atomic Studio (Plasma edition)
 {{{ git_dir_setup_macro }}}
 
 %install
-mkdir -p %{buildroot}/usr
-cp -rv files/* %{buildroot}/usr
+mkdir -p %{buildroot}%{_exec_prefix} %{buildroot}%{_sysconfdir}
+cp -rv files/etc/* %{buildroot}%{_sysconfdir}
+cp -rv files/usr/* %{buildroot}%{_exec_prefix}
 
 %files
-/usr/*
+%{_exec_prefix}/lib/sddm/sddm.conf.d/*
+%{_sysconfdir}/profile.d/*
+%{_sysconfdir}/skel/.*
+%{_sysconfdir}/xdg/*
 
 %changelog
 {{{ git_dir_changelog }}}
