@@ -26,7 +26,6 @@ cp -rv files/usr/* %{buildroot}%{_exec_prefix}
 %files
 %{_exec_prefix}/lib/sddm/sddm.conf.d/*
 %{_sysconfdir}/profile.d/*
-%{_sysconfdir}/skel/.*
 %{_sysconfdir}/xdg/*
 
 %changelog
