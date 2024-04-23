@@ -1,4 +1,4 @@
-Name:          studio-presets-gnome
+Name:          studio-presets-plasma
 Vendor:        atomic-studio-org
 Version:       {{{ studio-wallpapers_version }}}
 Release:       0%{?dist}
