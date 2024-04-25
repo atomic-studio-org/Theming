@@ -1,0 +1,14 @@
+[kdeglobals][General]
+ColorScheme=AtomicStudio
+
+[kwinrc][org.kde.kdecoration2]
+ButtonsOnLeft=
+ButtonsOnRight=IAX
+library=org.kde.kwin.aurorae
+theme=__atomic-studio
+
+[plasmarc][Theme]
+name=default
+
+[KSplash]
+Theme=com.github.atomic-studio.theme-splash

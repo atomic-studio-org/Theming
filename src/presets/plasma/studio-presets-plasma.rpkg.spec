@@ -8,7 +8,6 @@ URL:           https://github.com/%{vendor}/Theming
 VCS:           {{{ git_dir_vcs }}}
 Source:        {{{ git_dir_pack }}}
 BuildArch:     noarch
-Conflicts:     studio-presets-kde
 
 %description
 Presets and Branding for Atomic Studio (Plasma edition)
@@ -25,6 +24,10 @@ cp -rv files/usr/* %{buildroot}%{_exec_prefix}
 
 %files
 %{_exec_prefix}/lib/sddm/sddm.conf.d/*
+%{_datadir}/color-schemes/*.colors
+%{_datadir}/plasma/look-and-feel/com.github.AtomicStudio.theme
+%{_datadir}/plasma/avatars/*.png
+%{_datadir}/aurorae/themes/AtomicStudio
 %{_sysconfdir}/xdg/*
 
 %changelog

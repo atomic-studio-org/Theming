@@ -1,0 +1,21 @@
+{
+  "KPackageStructure": "Plasma/LookAndFeel",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Email": "tulilirockz@outlook.com",
+        "Name": "Tulip Blossom"
+      }
+    ],
+    "Category": "Global Themes (Plasma 6)",
+    "Dependencies": [],
+    "EnabledByDefault": true,
+    "Id": "atomic-studio",
+    "License": "MIT",
+    "Name": "Atomic Studio",
+    "Version": "0.2.6"
+  },
+  "X-KPackage-Dependencies": [
+    "kns://aurorae.knsrc/api.kde-look.org/2135229"
+  ]
+}
