@@ -5,7 +5,7 @@ ColorScheme=AtomicStudio
 ButtonsOnLeft=
 ButtonsOnRight=IAX
 library=org.kde.kwin.aurorae
-theme=__atomic-studio
+theme=AtomicStudio
 
 [plasmarc][Theme]
 name=default
