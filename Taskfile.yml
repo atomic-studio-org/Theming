@@ -2,9 +2,16 @@ version: '3'
 
 tasks:
   default:
+    - task: build:rpmspec
+  build:distrobox:
+    desc: Generate a distrobox container with necessary dependencies to build this repo's RPM files.
     cmds:
-      - task: build:rpmspec
+      - distrobox assemble create -f {{.BUILDER_INI}}
+    vars:
+      BUILDER_INI: ./builder.distrobox.ini
   build:rpmspec:
+    desc: Build a specified RPKG rpm spec in the CLI arguments.
     cmds:
-      - mkdir -p ./output
-      - podman build -v "$(realpath "$PWD")/output:/output:Z" -f Containerfile .
+      - rpkg -v -C ./rpkg.conf local --outdir "{{.OUT}}" {{.CLI_ARGS}}
+    vars:
+      OUT: output

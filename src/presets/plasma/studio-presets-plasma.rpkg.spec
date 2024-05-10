@@ -1,6 +1,6 @@
 Name:          studio-presets-plasma
 Vendor:        atomic-studio-org
-Version:       {{{ studio-wallpapers_version }}}
+Version:       0.9.0+{{{ git_ref }}}
 Release:       0%{?dist}
 Summary:       Atomic Studio presets for the Plasma desktop
 License:       Apache-2.0
@@ -11,6 +11,8 @@ BuildArch:     noarch
 
 %description
 Presets and Branding for Atomic Studio (Plasma edition)
+Contains a custom Catppuccin-based theme for Plasma 6
+Check out their amazing work on https://github.com/catppuccin/kde !
 
 %global debug_package %{nil}
 

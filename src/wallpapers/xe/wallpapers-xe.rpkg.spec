@@ -1,8 +1,8 @@
 Name:          studio-wallpapers-xe
 Vendor:        atomic-studio-org
-Version:       {{{ studio-wallpapers_version }}}
-Release:       0%{?dist}
-Summary:       Wallpapers from Xe
+Version:       1.0.0+{{{ git_ref }}}
+Release:       1%{?dist}
+Summary:       Collections of wallpapers made by Xe
 License:       CC-BY-SA-4.0
 URL:           https://github.com/%{vendor}/%{name}
 VCS:           {{{ git_dir_vcs }}}
@@ -10,7 +10,7 @@ Source:        {{{ git_dir_pack }}}
 BuildArch:     noarch
 
 %description
-Wallpapers from Xe
+Wallpapers redistributed for Atomic Studio made by Xe Iaso
 
 %global debug_package %{nil}
 %global ARTIST xe
