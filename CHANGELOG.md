@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/atomic-studio-org/Theming/compare/v1.0.0...v1.1.0) (2024-05-11)
+
+
+### Features
+
+* initial KDE Catppuccin-based theme ([b938656](https://github.com/atomic-studio-org/Theming/commit/b9386566fbded5acc5b8b13b392e64b110b9aa52))
+
+
+### Bug Fixes
+
+* **kde:** proper metadata for aurorae theme ([aa53099](https://github.com/atomic-studio-org/Theming/commit/aa530999ca70f7dfd7e6ce2b2a296bbcc90c5e3f))
+* merging ([0f8f18f](https://github.com/atomic-studio-org/Theming/commit/0f8f18f84ffcd98c039cbd1b6c18ed555171dd2d))
+
 ## 1.0.0 (2024-04-29)
 
 
