@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/atomic-studio-org/Theming/compare/v1.1.0...v1.2.0) (2024-09-10)
+
+
+### Features
+
+* taskfile + distrobox for building ; flake cleanup ; proper package versions ([b63fadd](https://github.com/atomic-studio-org/Theming/commit/b63fadd796c9e0d5be491c546870b2d804285c03))
+
 ## [1.1.0](https://github.com/atomic-studio-org/Theming/compare/v1.0.0...v1.1.0) (2024-05-11)
 
 
